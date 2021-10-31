@@ -3,3 +3,9 @@ pandas
 numpy
 scipy
 matplotlib
+pyspark
+plotly
+matplotlib
+pyarrow
+findspark
+ipynb
