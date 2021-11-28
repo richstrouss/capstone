@@ -1,5 +1,12 @@
 env
 .ipynb_checkpoints
 upgrade
+<<<<<<< HEAD
+*.orig
+local_covid/
+*.jupyterlab-workspace
+scratch.ipynb
+=======
 data/covid/processed_data/merged_eda/sdf.pkl
 
+>>>>>>> main
