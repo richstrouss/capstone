@@ -9,6 +9,7 @@ Exploratory analysis of pollution effects on the spread of covid-19
 - Richard Strouss
 
 ### Covid Analysis Notebooks
+- [Covid-19 Data Collection](https://github.com/FuzzyPhoton/DS-capstone-pt1/blob/main/data/covid/covid_data_collection.ipynb)
 
 
 ### Pollutant Analysis Notebooks
