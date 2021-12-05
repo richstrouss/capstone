@@ -10,6 +10,8 @@ Exploratory analysis of pollution effects on the spread of covid-19
 
 ### Covid Analysis Notebooks
 - [Covid-19 Data Collection](https://github.com/FuzzyPhoton/DS-capstone-pt1/blob/main/data/covid/covid_data_collection.ipynb)
+- [Covid-19 Data Collection](./blob/main/data/covid/covid_data_collection.ipynb)
+- [Covid-19 Data Analysis](https://github.com/FuzzyPhoton/DS-capstone-pt1/blob/main/data/covid/covid_data_analysis.ipynb)
 
 
 ### Pollutant Analysis Notebooks
