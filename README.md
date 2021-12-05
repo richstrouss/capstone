@@ -1,5 +1,5 @@
 # DS-capstone-pt1
-Exploratory analysis of pollution effects on the spread of covid-19
+Exploratory analysis of pollution effects on the spread of Covid-19
 
 ## Contributors
 
@@ -12,7 +12,8 @@ Exploratory analysis of pollution effects on the spread of covid-19
 - [Covid-19 Data Collection](./data/covid/covid_data_collection.ipynb)
 - [Covid-19 Data Analysis](./data/covid/covid_data_analysis.ipynb)
 - [Python requirements to run](./data/covid/requirements.txt)* 
-* Execute `pip install -r requirements.txt`
+
+##### *Execute `pip install -r requirements.txt`
 
 ### Pollutant Analysis Notebooks
 - [Pollution Collection](pollution_data_collection.ipynb)
