@@ -6,7 +6,7 @@ import json
 import os
 import glob
 import cv2
-
+import pathlib
 import plotly.express as px
 """
 This script is able to load a pollution dataset and color the appropriate counties according to 
@@ -15,6 +15,10 @@ This script is able to load a pollution dataset and color the appropriate counti
     
     Sorry this is a bit clunky to deal with but I figured parameterizing it was unnecessary at this point.
 """
+
+
+
+
 
 def get_us_counties():
 
@@ -39,16 +43,17 @@ def make_images(df):
     for idx, date in enumerate(dates_in_df):
         fig = px.choropleth(df[df['Date Local']==date], geojson=counties, locations='fips', color='Arithmetic Mean',
                            color_continuous_scale="Viridis",
-                           range_color=(0, 70), #max value for daily avg is ~60ppb
+                           range_color=(0, 60), #max value for daily avg is ~60ppb
                            scope="usa",
                            labels={'Arithmetic Mean':'Arithmetic Mean (ppb)'}
                           )
         # fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
         fig.update_layout(
             autosize=False,
-            width=1200,
-            height=900,)
+            width=1300,
+            height=1100,)
         fig.write_image("no2_images/image{}.jpg".format(idx))
+
         
 
 
@@ -58,7 +63,7 @@ def make_images(df):
 # load dataframe of interest
 def main():
 
-    df = pd.read_csv("./data/air_quality/no2/daily_no2_2020_with_FIPS.csv",dtype={'fips':'string'})
+    df = pd.read_csv("./data/air_quality/no2/daily_no2_2020_squashed.csv",dtype={'fips':'string'})
     make_images(df)
 
 
